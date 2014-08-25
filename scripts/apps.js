@@ -8,11 +8,13 @@ var Apps = {
           if (err) console.error(err);
           console.log(data);
           var F = 9 / 5 * (data.main.temp - 273) + 32;
-          $el.html(Math.round(F));
+          $div = $('<div style="margin: 23px"></div>');
+          $div.prepend('<img src="http://openweathermap.org/img/w/' + data.weather[0].icon + '.png" width="100" heihht="100"/>');
+          $div.append(Math.round(F) + ' &#176;F');
+          $el.html($div);
         });
       }
     });
-    //F = 9/5(K - 273) + 32
   },
 
   // Basic ajax call wrapper
