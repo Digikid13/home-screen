@@ -3,60 +3,35 @@
     <title>Title</title>
     <script src="http://code.jquery.com/jquery.min.js"></script>
     <script src="app.js"></script>
-    <style type="text/css">
-      .tile {
-        border: 1px solid red;
-        width: 200px;
-        height: 200px;
-        float: left;
-        margin: 10px;
-        border-radius: 10px;
-        background: lightgrey;
-      }
-
-      #container {
-        width: 80%;
-        margin: 0 auto;
-      }
-      #sidebar {
-        width: 200px;
-        height: 100%;
-        position: absolute;
-        background: red;
-        left: -200px;
-        top: 0px;
-        color: white;
-        border: 1px solid black;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
     <div id="sidebar">
+      <h3 align="center">Tiles</h3>
       <ul>
-        <li>test</li>
+        <li id="weather"><img src="imgs/weather.png"/>Weather</li>
         <li>test2</li>
       </ul>
     </div>
     <div id="body">
       <h1 align="center">Home Page</h1>
       <div id="container">
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
-        <div class="tile empty"></div>
+        <div id="1" class="tile empty"></div>
+        <div id="2" class="tile empty"></div>
+        <div id="3" class="tile empty"></div>
+        <div id="4" class="tile empty"></div>
+        <div id="5" class="tile empty"></div>
+        <div id="6" class="tile empty"></div>
+        <div id="7" class="tile empty"></div>
+        <div id="8" class="tile empty"></div>
+        <div id="9" class="tile empty"></div>
+        <div id="10" class="tile empty"></div>
+        <div id="11" class="tile empty"></div>
+        <div id="12" class="tile empty"></div>
+        <div id="13" class="tile empty"></div>
+        <div id="14" class="tile empty"></div>
+        <div id="15" class="tile empty"></div>
       </div>
     </div>
-
   </body>
 </html>
