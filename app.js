@@ -1,13 +1,15 @@
 //create functions that make the api calls, show the selections of tiles when clicking on an empty div, bring up a side bar with all the tiles that may or may not move the page over
 var tileApp = {
   init: function() {
+    //$('#sidebar').hide();
     $('.tile').on('click', function() {
+      $('#sidebar').animate({'left': '0px'}, 100);
       tileApp.update.apply(this);
     });
   },
   update: function() {
     $el = $(this);
-    if ($el.hasClass('empty')){
+    if ($el.hasClass('empty')) {
       var randomColor = '' + Math.round(Math.random()*6) + Math.round(Math.random()*6) + Math.round(Math.random()*6) + Math.round(Math.random()*6) + Math.round(Math.random()*6) + Math.round(Math.random()*6);
       
       $el.removeClass('empty');
