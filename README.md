@@ -6,9 +6,9 @@ The idea is to have a home web page that you can customize to have different thi
 I use:
 ======
 
-http://anthonyterrien.com/knob/ for the timer.
-https://developer.yahoo.com/yql/console/ for the RSS Reader.
-http://openweathermap.org/api for the weather.
+http://anthonyterrien.com/knob/ for the timer.  
+https://developer.yahoo.com/yql/console/ for the RSS Reader.  
+http://openweathermap.org/api for the weather.  
 
 If you want to add a new tile app:
 ==================================
