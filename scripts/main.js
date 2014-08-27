@@ -9,8 +9,10 @@ var tileApp = {
 
     // Add a function to each empty tile to show the sidebar
     $('.empty').on('click', function() {
-      $('#sidebar').animate({'left': '0px'}, 100);
+      $('.selected').removeClass('selected');
+      $(this).addClass('selected');
 
+      $('#sidebar').animate({'left': '0px'}, 100);
       $('#sidebar').attr('class', '');
       $('#sidebar').addClass($(this).attr('id'));
 
@@ -24,6 +26,7 @@ var tileApp = {
 
   // Either shows available tiles in the sidebar, (TODO) or options for the current tile
   sidebar: function(tile, app) {
+    $('.selected').removeClass('selected');
     $el = $('#' + tile);
     if ($el.hasClass('empty')) {
       $el.removeClass('empty');
@@ -32,6 +35,13 @@ var tileApp = {
       Apps[app].apply($el);
     }
   },
+  callback: function(data,cb) {
+    cb(data);
+  }
+};
+
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
 };
 
 $(document).ready(function() {

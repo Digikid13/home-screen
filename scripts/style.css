@@ -1,11 +1,21 @@
 .tile {
-  border: 1px solid red;
+  border: 1px solid lightgrey;
   width: 200px;
   height: 200px;
   float: left;
   margin: 10px;
   border-radius: 10px;
   color: white;
+}
+
+.empty:hover {
+  border: 2px solid red;
+  margin: 9px;
+}
+
+.selected {
+  border: 3px solid lightblue;
+  margin: 8px;
 }
 
 #container {
@@ -22,13 +32,27 @@
   border: 1px solid black;
 }
 
-img {
+#close-sidebar {
+  width: 20px;
+
+}
+
+#sidebar img, #rss img {
   margin-top: -7px;
   vertical-align: middle;        
 }
 
-ul {
+#sidebar ul, #rss {
   text-align: center;
   padding: 0;
   list-style: none;
+}
+
+#rss li {
+  height: 20px;
+  padding: 4px 0 0 0;
+  border: 1px solid black;
+  margin: 3px 0;
+  background-color: lightgrey;
+  color: black;
 }

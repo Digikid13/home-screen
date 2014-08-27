@@ -1,7 +1,8 @@
 <html>
   <head>
-    <title>Home</title>
+    <title>Dashboard</title>
     <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="scripts/jquery.knob.min.js"></script>
     <script src="scripts/apps.js"></script>
     <script src="scripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="scripts/style.css">
@@ -12,10 +13,13 @@
       <ul>
         <li id="weather"><img src="imgs/weather.png"/>Weather</li>
         <li id="task"><img src="imgs/task.png" width="18" height="24"/> Notepad</li>
+        <li id="timer"><!-- <img src=""/> -->Timer</li>
+        <li id="rss"><!-- <img src=""/> -->RSS Feed</li>
       </ul>
+      <div id="close-sidebar"></div>
     </div>
     <div id="body">
-      <h1 align="center">Home Page</h1>
+      <h1 align="center">Dashboard</h1>
       <div id="container">
         <div id="1" class="tile empty"></div>
         <div id="2" class="tile empty"></div>
